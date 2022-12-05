@@ -1,0 +1,7 @@
+<button (click)="GetRssFeedData()">Get Rss Data</button>
+
+<ul>
+  <li *ngFor="let o of RssData?.rss.channel[0].item.slice(0, 5)">
+    <a href="{{ o.link[0] }}">{{ o.title[0] }}</a>
+  </li>
+</ul>
